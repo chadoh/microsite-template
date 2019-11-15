@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsite</title>
+  <link rel="stylesheet" href="global.scss">
+  <!-- <link rel="icon" href="favicon.png" type="image/png" /> -->
+  <meta property="og:title" content="Microsite">
+  <meta property="og:description" content="A microsite about something">
+  <!-- <meta property="og:image" content=""> -->
+  <!-- <meta property="og:url" content="https://example.com/"> -->
+  <!-- <meta name="twitter:card" content="summary_large_image"> -->
+</head>
+<body>
+  <main>
+    <h1>Microsite</h1>
+    <div class="columns">
+      <div>
+        <!-- you can use posthtml to separate page into multiple files -->
+        <include src="explanation.html"></include>
+      </div>
+
+      <div id="counter">
+        <h2>Cool⨉<span data-behavior="counter"></span>: a JavaScript demo</h2>
+        <p><button data-behavior="trigger">Make it cooler</button></p>
+        <p>This uses TypeScript. Fancy⨉<span data-behavior="counter"></span></p>
+      </div>
+    </div>
+  </main>
+  <script src="main.ts"></script>
+</body>
+</html>
