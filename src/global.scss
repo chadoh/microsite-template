@@ -3,24 +3,27 @@
 }
 
 html {
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-  font-size: calc(.85em + 1vw);
-  line-height: 1.3;
-}
-
-body {
+  --bg: #efefef;
+  --fg: #1e1e1e;
   --primary: rgb(231, 59, 147);
   --secondary: rgb(62, 140, 116);
   --tertiary: rgb(226, 110, 44);
 
-  color: #1e1e1e;
-  margin: 0;
-  padding: 1em;
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-size: calc(.85em + 1vw);
+  line-height: 1.3;
 
   @media (prefers-color-scheme: dark) {
-    background-color: #1e1e1e;
-    color: #efefef
+    --bg: #1e1e1e;
+    --fg: #efefef;
   }
+}
+
+body {
+  margin: 0;
+  padding: 1em;
 }
 
 main {
