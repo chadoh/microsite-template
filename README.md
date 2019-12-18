@@ -15,6 +15,15 @@ Change into the directory and remove the `.git` folder:
 
     cd my-cool-site && rm -rf .git
 
+Update `package.json` with correct info. "author" and "repository" and all of
+that is initially blank.
+
+Initialize it as your own git repository.
+
+    git init
+    git add .
+    git commit -m "Initial commit: copy from chadoh/microsite-template"
+
 Install all development dependencies:
 
     npm i -D \@types/jest html-inline husky jest parcel-bundler posthtml-include sass ts-jest typescript
@@ -22,9 +31,6 @@ Install all development dependencies:
 Run local development environment:
 
     npm run dev
-
-Initialize it as a git directory (or whatever). Update `package.json` with
-correct info. "author" and "repository" and all of that is initially blank.
 
 Happy hacking!
 
